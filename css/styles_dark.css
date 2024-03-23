@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #FFC107;
+    --secundary-color: #212121;
+    --font-titles: 70px;
+    --font-subtitles: 32px;
+    --primary-tip:  font-family: "Space Grotesk", sans-serif; ;
+    --secundary-tip: font-family: "Domine", serif; ;
+}
+
+#cont-general{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-calculadora{
+    width: 420px;
+    height: 660px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2b374a, #242e3e);
+
+}
+
+#cont-escritura{
+    width: 100%;
+    padding: 20px;
+}
+
+#cont-escritura input{
+    width: 100%;
+    font-size: var(--font-titles);
+}
+
+#cont-botones{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.btn{
+    width: 22%;
+    padding: 20px;
+    font-size: var(--font-subtitles);
+    margin-bottom: 20px;
+    border: 0 solid transparent;
+    border-radius: 50px;
+    background: #212121;
+    box-shadow:  20px 20px 60px #1c1c1c,
+                 -20px -20px 60px #262626;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+}
+#ac, #borrar, #porcentaje{
+    color: #a9adb4;
+}
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #punto{
+    color:#fff;
+}
+#dividir, #multiplicar, #restar, #sumar, #igual{
+    color: var(--primary-color);
+}
+.btn.doble{
+    width: 48%;
+    border: 0 solid transparent;
+    border-radius: 50px;
+    background: #212121;
+    box-shadow:  20px 20px 60px #1c1c1c,
+                 -20px -20px 60px #262626;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#noche{
+    background: url(../img/icono_luna.png);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: 0 transparent;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+#noche.dia{
+    background: url(../img/icono_sol.png);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: 0 transparent;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
